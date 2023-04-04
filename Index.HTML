@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon"/>
+  <head>
+    <title>Roger Links</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e8eff4;
+      }
+      h1 {
+        text-align: center;
+        color: #333333;
+        margin-top: 30px;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      .column1 {
+        width: 240px;
+        margin: 0 20px;
+        padding: 20px;
+        background-color: #08F991;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+.column2 {
+        width: 240px;
+        margin: 0 20px;
+        padding: 20px;
+        background-color: #F1EE37;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+.column3 {
+        width: 240px;
+        margin: 0 20px;
+        padding: 20px;
+        background-color: #1FBAF6;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+.column4 {
+        width: 240px;
+        margin: 0 20px;
+        padding: 20px;
+        background-color: #F45041;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+.column5 {
+        width: 240px;
+        margin: 0 20px;
+        padding: 20px;
+        background-color: #D8BFD8;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+      .link {
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+        color: #333333;
+        font-size: 16px;
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 5px;
+        text-align: left;
+        text-decoration: none;
+      }
+      .link:hover {
+        background-color: #cccccc;
+      }
+      .button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        color: #ffffff;
+        font-size: 16px;
+        background-color: #428bca;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .button:hover {
+        background-color: #3071a9;
+      }
+      input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 20px;
+        border: 1px solid #d9d9d9;
+        transition: all 0.3s ease;
+      }
+      input[type="text"]:focus {
+        outline: none;
+        border: 1px solid #bfbfbf;
+        box-shadow: 0px 0px 10px #bfbfbf;
+      }
+      #search-input {
+        width: 40%;
+      }
+      #clock {
+        display: flex;
+        font-size: 25px;
+        font-weight: bold;
+	  
+      }
+      #time {
+        font-size: 35px;
+        margin-bottom: 1px;
+
+      }
+      #date {
+        color: #777;
+        font-size: 25px;
+      }
+     .button2 {
+	position: absolute;
+	top: 08%;
+	left: 80%;
+	background-color: #08F991;
+       	border: none;
+       	color: #444;
+       	padding: 30px 40px;
+       	text-align: center;
+       	text-decoration: none;
+       	display: inline-block;
+       	font-size: 20px;
+       	margin: 01px 01px;
+       	border-radius: 10px;
+       	transition: all 0.3s ease;
+       	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+      }
+
+     .button2:hover {
+  	background-color: #ddd;
+	}
+    </style>
+
+<style>
+		.logo {
+			position: absolute;
+			top:08%;
+			left: 03%;
+			padding: 01px;
+		}
+</style>
+<div class="logo" id="logo"><a href="https://wa.me/554699202103" target="_blank"><img src="logo.png" alt="WhatsApp" width="350"></div>
+  </head>
+  <body>
+
+<div style="background-color: #e8eff4; padding: 01px;">
+        <marquee scrollamount="3"><b><font color="red">ATENÇÃO: Verifique sempre o vencimento dos Certificados Digitais ! !</font></b></marquee>
+    </div>
+<a href="postits.html" target="_blank" class="button2"><b>Anote aqui</b></a>
+<a href="#" onmouseover="mostrarBalao()"></a>
+
+
+<h1><b><i><font face="Nova Bold" style="text-aling:left>ACS CONTABILIDADE</b></h1></i></font></div>
+    <center>
+      <div id="clock"></div>
+      <div id="time"></div>
+      <div id="date"></div>
+    </center>
+    <center>
+      <form id="search-form" action="https://www.google.com/search" method="GET" target="_blank" >
+        <input type="text" name="q" id="search-input" placeholder="Pesquisar...">
+      </form>
+    </center>
+<script>
+		function mostrarBalao() {
+			document.getElementById('balao').style.display = 'block';
+		}
+
+		document.addEventListener('click', function(event) {
+			var balao = document.getElementById('balao');
+			if (event.target.closest('.balao') !== balao && event.target !== document.querySelector('a')) {
+				balao.style.display = 'none';
+			}
+		});
+	</script>
+
+    <script>
+      const form = document.getElementById('search-form');
+      const input = document.getElementById('search-input');
+      input.addEventListener('keydown', function(event) {
+        if (event.keyCode === 13) { // tecla Enter
+	  event.preventDefault();
+      form.submit();
+	input.value = ""; // limpa o valor da caixa de pesquisa
+    }
+  });
+function updateClock() {
+  const time = document.getElementById('time'); 
+  const date = document.getElementById('date');
+  const now = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'America/Sao_Paulo' };
+  const dateTimeString = now.toLocaleString('pt-BR', options);
+  const timeString = now.toLocaleTimeString('pt-BR', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false });
+  const dateString = now.toLocaleDateString('pt-BR', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'America/Sao_Paulo' });
+  const dayOfWeek = dateString.charAt(0).toUpperCase() + dateString.slice(1);
+  
+  time.textContent = timeString;  date.textContent = dayOfWeek;
+}
+
+updateClock();
+setInterval(updateClock, 1000);
+
+</script>
+</center>
+</i>
+<script type="text/javascript">
+function abrirPaginas(URLS){
+for(var i=0; i<arguments.length; i++){
+open(arguments[i]);
+}
+};
+
+</script>
+    <div class="row">
+      <div class="column1">
+    <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp" target="_blank" class="link"><b>Cartão CNPJ</b></a>
+    <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir/" target="_blank" class="link"><b>CND Federal</b></a>
+    <a href="http://www.cdw.fazenda.pr.gov.br/cdw/emissao/certidaoAutomatica/" target="_blank" class="link"><b>CND Estadual</b></a>
+    <a href="http://pmfb.franciscobeltrao.com.br:7474/contribuinte/#/stmCertidaoNegativa/certidaoNegativa" target="_blank" class="link"><b>CND Municipal</b></a>
+    <a href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf" target="_blank" class="link"><b>CND Caixa</b></a>
+    <a href="https://cndt-certidao.tst.jus.br/inicio.faces" target="_blank" class="link"><b>CND Trabalhista</b></a>
+    <a href="https://www.tjpr.jus.br/custas-judiciais-e-taxa-judiciaria" target="_blank" class="link"><b>Falência Concordata</b></a>
+    <a href="http://www.empresafacil.pr.gov.br/acoes/certidao" target="_blank" class="link"><b>Simplificada</b></a>
+           </div>
+
+      <div class="column2">
+    <a href="https://www.comprasnet.gov.br/seguro/loginPortal.asp" target="_blank" class="link"><b>SICAF</b></a>
+    <a href="https://cav.receita.fazenda.gov.br/autenticacao/" target="_blank" class="link"><b>e-CAC</b></a>
+    <a href="http://www8.receita.fazenda.gov.br/SimplesNacional/" target="_blank" class="link"><b>Simples Nacional</b></a>
+    <a href="http://www.sintegra.fazenda.pr.gov.br/sintegra/" target="_blank" class="link"><b>Sintegra</b></a>
+    <a href="https://receita.pr.gov.br/login" target="_blank" class="link"><b>Receita PR</b></a>
+    <a href="https://www.esnfs.com.br/" target="_blank" class="link"><b>Equiplano</b></a>
+    <a href="https://sso.acesso.gov.br/login?client_id=www.gov.br&authorization_id=18737774673" target="_blank" class="link"><b>Gov.br</b></a>
+    <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublica.asp" target="_blank" class="link"><b>CPF Regular</b></a>
+        </div>
+
+   <div class="column3">
+    <a href="http://www.empresafacil.pr.gov.br/" target="_blank" class="link"><b>Empresa Fácil</b></a>
+    <a href="https://www.regularize.pgfn.gov.br/" target="_blank" class="link"><b>Regularize</b></a>
+    <a href="https://sicalc.receita.economia.gov.br/sicalc/rapido/contribuinte" target="_blank" class="link"><b>Sicalc</b></a>
+    <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/ja-sou-mei" target="_blank" class="link"><b>Ja sou MEI</b></a>
+    <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/pagamento-de-contribuicao-mensal/boleto-de-pagamento-1" target="_blank" class="link"><b>Simples MEI</b></a>
+    <a href="https://solucoes.receita.fazenda.gov.br/Servicos/consrest/Atual.app/paginas/index.asp" target="_blank" class="link"><b>Cons. Restituição IRPF</b></a>
+    <a href="http://pmfb.franciscobeltrao.com.br:7474/esportal/stmimpressaoguias.list.logic" target="_blank" class="link"><b>Impressão de Guias FB</b></a>
+    <a href="https://franciscobeltrao.1doc.com.br/atendimento " target="_blank" class="link"><b>1Doc FB</b></a>
+    	</div>
+
+    <div class="column4">
+    <a href="https://web.whatsapp.com/" target="_blank" class="link"><b>WhatsApp Web</b></a>
+    <a href="https://outlook.live.com/owa/" target="_blank" class="link"><b>Outlook</b></a>
+    <a href="https://mail.google.com/" target="_blank" class="link"><b>Gmail</b></a>
+    <a href="https://www.ilovepdf.com/pt" target="_blank" class="link"><b>I♥PDF</b></a>
+    <a href="https://www.detran.pr.gov.br/" target="_blank" class="link"><b>Detran PR</b></a>
+    <a href="https://www.fsist.com.br/" target="_blank" class="link"><b>FSist</b></a>
+    <a href="https://valoresareceber.bcb.gov.br/publico" target="_blank" class="link"><b>Valores a Receber</b></a>
+    <a href="https://sped.fazenda.pr.gov.br/NFe/webservices/sped/nfe/completa" target="_blank" class="link"><b>Cons. Carta de Correção</b></a>
+	</div>
+ </body>
+</html>

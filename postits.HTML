@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="favicon2-32x32.png" type="image/x-icon"/>
+<head>
+	<title>Blocos de Anotações</title>
+	<style>
+		body {
+			background-color: #f7f7f7;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			margin-top: 05px;
+			text-align: center;
+		}
+		.postit {
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+			transition: all 0.3s ease-in-out;
+			cursor: move;
+		}
+		.postit.red {
+			top: 75px;
+			left: 30px;
+			background-color: #ffcccc;
+			color: black;
+		}
+		.postit.blue {
+			top: 75px;
+			left: 295px;
+ 			background-color: #ccccff;
+  			color: black;
+		}
+		.postit.black {
+			top: 75px;
+			left: 560px;
+			background-color: #cccccc;
+  			color: white;
+		}
+		.postit.white {
+			top: 75px;
+			left: 825px;
+ 			background-color: #fffaf0;
+  			color: black;
+		}
+		.postit.yellow {
+			top: 75px;
+			left: 1090px;
+	                background-color: #ffffcc;
+  			color: black;
+		}
+		.postit.orange {
+			top: 340px;
+			left: 30px;
+			background-color: #ffcc99;
+			color: black;
+		}
+		.postit.green {
+			top: 340px;
+			left: 295px;
+ 			background-color: #ccffcc;
+  			color: black;
+		}
+		.postit.purple {
+			top: 340px;
+			left: 560px;
+			background-color: #ffccff;
+  			color: white;
+		}
+		.postit.teal {
+			top: 340px;
+			left: 825px;
+ 			background-color: #99cccc;
+  			color: black;
+		}
+		.postit.blue2 {
+			top: 340px;
+			left: 1090px;
+	                background-color: #66ccff;
+  			color: black;
+		}
+		.postit:hover {
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+			transform: scale(1.05);
+		}
+		.postit textarea {
+			height: 100%;
+			width: 100%;
+			border: none;
+			font-size: 16px;
+			resize: none;
+			background-color: transparent;
+			overflow: auto;
+			box-sizing: border-box;
+		}
+	</style>
+	
+</head>
+<body>
+	<h1>Blocos de Anotações</h1>
+	<div class="postit red">
+		<textarea id="nota1"></textarea>
+	</div>
+	<div class="postit blue">
+		<textarea id="nota2"></textarea>
+	</div>
+	<div class="postit black">
+		<textarea id="nota3"></textarea>
+	</div>
+	<div class="postit white">
+		<textarea id="nota4"></textarea>
+	</div>
+	<div class="postit yellow">
+		<textarea id="nota5"></textarea>
+	</div>
+	<div class="postit orange">
+		<textarea id="nota6"></textarea>
+	</div>
+	<div class="postit green">
+		<textarea id="nota7"></textarea>
+	</div>
+	<div class="postit purple">
+		<textarea id="nota8"></textarea>
+	</div>
+	<div class="postit teal">
+		<textarea id="nota9"></textarea>
+	</div>
+	<div class="postit blue2">
+		<textarea id="nota10"></textarea>
+	</div>
+	
+	<script>{
+
+		const nota1 = localStorage.getItem('nota1');
+		if (nota1) {
+			document.getElementById('nota1').value = nota1;
+		}
+		const nota2 = localStorage.getItem('nota2');
+		if (nota2) {
+			document.getElementById('nota2').value = nota2;
+		}
+		const nota3 = localStorage.getItem('nota3');
+		if (nota3) {
+			document.getElementById('nota3').value = nota3;
+		}
+		const nota4 = localStorage.getItem('nota4');
+		if (nota4) {
+			document.getElementById('nota4').value = nota4;
+		}
+		const nota5 = localStorage.getItem('nota5');
+		if (nota5) {
+			document.getElementById('nota5').value = nota5;
+		}
+
+		const nota6 = localStorage.getItem('nota6');
+		if (nota6) {
+			document.getElementById('nota6').value = nota6;
+		}
+
+		const nota7 = localStorage.getItem('nota7');
+		if (nota7) {
+			document.getElementById('nota7').value = nota7;
+		}
+
+		const nota8 = localStorage.getItem('nota8');
+		if (nota8) {
+			document.getElementById('nota8').value = nota8;
+		}
+		const nota9 = localStorage.getItem('nota9');
+		if (nota9) {
+			document.getElementById('nota9').value = nota9;
+		}
+		const nota10 = localStorage.getItem('nota10');
+		if (nota10) {
+			document.getElementById('nota10').value = nota10;
+		}
+		const textarea1 = document.getElementById('nota1');
+		textarea1.addEventListener('input', () => {
+			localStorage.setItem('nota1', textarea1.value);
+		});
+
+		const textarea2 = document.getElementById('nota2');
+		textarea2.addEventListener('input', () => {
+			localStorage.setItem('nota2', textarea2.value);
+		});
+		const textarea3 = document.getElementById('nota3');
+		textarea3.addEventListener('input', () => {
+			localStorage.setItem('nota3', textarea3.value);
+		});
+		const textarea4 = document.getElementById('nota4');
+		textarea4.addEventListener('input', () => {
+			localStorage.setItem('nota4', textarea4.value);
+		});
+		const textarea5 = document.getElementById('nota5');
+		textarea5.addEventListener('input', () => {
+			localStorage.setItem('nota5', textarea5.value);
+		});
+		}
+		const textarea6 = document.getElementById('nota6');
+		textarea6.addEventListener('input', () => {
+			localStorage.setItem('nota6', textarea6.value);
+		});
+
+		const textarea7 = document.getElementById('nota7');
+		textarea7.addEventListener('input', () => {
+			localStorage.setItem('nota7', textarea7.value);
+		});
+		const textarea8 = document.getElementById('nota8');
+		textarea8.addEventListener('input', () => {
+			localStorage.setItem('nota8', textarea8.value);
+		});
+		const textarea9 = document.getElementById('nota9');
+		textarea9.addEventListener('input', () => {
+			localStorage.setItem('nota9', textarea9.value);
+		});
+		const textarea10 = document.getElementById('nota10');
+		textarea10.addEventListener('input', () => {
+			localStorage.setItem('nota10', textarea10.value);
+		});
+
+	</script>
+</body>
+</html>
